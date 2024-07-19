@@ -8,7 +8,8 @@ import bean.Teacher;
 import dao.TeacherDao;
 import tool.Action;
 
-public class LoginExecuteAction extends Action{
+public class LoginExecuteAction
+extends Action{
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		HttpSession session = req.getSession();//セッション
