@@ -13,7 +13,6 @@ import dao.ClassNumDao;
 import tool.Action;
 
 public class StudentCreateAction extends Action {
-
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		//ローカル変数の宣言 1
