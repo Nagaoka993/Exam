@@ -23,6 +23,8 @@ extends Action{
 		System.out.println(id+password);
 		System.out.println(teacher);
 
+
+
 		if(teacher!=null){
 			req.setAttribute("user",teacher);//セッションにuserとして教員オブジェクトを渡す
 			//メインメニューを実装
