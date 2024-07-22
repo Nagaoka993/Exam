@@ -28,10 +28,10 @@ public class TeacherDao extends Dao{
 			if(rSet.next()){
 				//リザルトセットが存在する場合
 				//教員インスタンスに検索結果をセット
-				teacher.setId("id");
-				teacher.setPassword("password");
-				teacher.setName("name");
-				teacher.setSchool_cd("school_cf");
+				teacher.setId(rSet.getString("id"));
+				teacher.setPassword(rSet.getString("password"));
+				teacher.setName(rSet.getString("name"));
+				teacher.setSchool_cd(rSet.getString("school_cf"));
 				// SchoolDao のインスタンスを生成
 				SchoolDao schoolDao = new SchoolDao();
 				//学校フィールドには学校コードで検索した学校インスタンスをセット
