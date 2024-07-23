@@ -24,9 +24,8 @@ extends Action{
 		System.out.println(teacher);
 
 
-
 		if(teacher!=null){
-			req.setAttribute("user",teacher);//セッションにuserとして教員オブジェクトを渡す
+			session.setAttribute("user",teacher);//セッションにuserとして教員オブジェクトを渡す
 			//メインメニューを実装
 			return "../studentmanager/menu.jsp";
 		}else{ //パラメータとしてエラーを渡しつつメニューへ戻る。

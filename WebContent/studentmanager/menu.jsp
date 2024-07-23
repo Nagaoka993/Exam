@@ -1,8 +1,12 @@
 <%-- メインメニュー --%>
+<%@page import="bean.Teacher, java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <c:import url="../common/base.jsp">
+
+
 	<c:param name="title">
 		得点管理システム
 	</c:param>
@@ -16,7 +20,9 @@
 	成績管理
 	<a href="../TestRegist.action">成績登録</a>
 	<a href="TestList.action">成績参照</a>
-	<a href="SubjectList.action">科目管理</a>
+
+	<a href="../scoremanager.main/Subjectlist.action">科目管理</a>
+
 	</section>
 	</c:param>
 
